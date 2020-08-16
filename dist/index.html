@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Polígonos</title>
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+  <body>
+    <h3>
+      CALCULA EL PERÍMETRO Y ÁREA DE TU POLÍGONO
+    </h3>
+    <p>Ingresa el valor requerido para tu polígono y luego selecciónalo.</p>
+    <ul>
+      <li>Círculo - Ingrese <b>radio</b></li>
+      <li>Rectángulo - Ingrese <b>base</b> y <b>altura</b></li>
+      <li>Tirángulo - Ingrese <b>lado</b>, <b>base</b> y <b>altura</b></li>
+      <li>Octágono y Decágono Ingrese <b>lado</b> y <b>apotema</b></li>
+    </ul>
+    <div id="card">
+      <input type="number" name="base" id="base"/>
+      <label for="base">Base</label><br/>
+      <input type="number" name="lado" id="lado"/>
+      <label for="lado">Lado</label><br/>
+      <input type="number" name="altura" id="altura"/>
+      <label for="altura">Altura</label><br/>
+      <input type="number" name="apotema" id="apotema"/>
+      <label for="apotema">Apotema</label><br/>
+      <input type="number" name="radio" id="radio"/>
+      <label for="apotema">Radio</label><br/>
+      <div>
+        <select name="figuras" id="poligono">
+          <option value="">Selecciona tu polígono</option>
+          <option value="3">Triángulo</option>
+          <option value="2">Rectángulo</option>
+          <option value="1">Círculo</option>
+          <option value="4">Octágono</option>
+          <option value="5">Decágono</option> 
+        </select>
+      </div>
+    </div>
+   
+
+    <script src="./main.js"></script>
+  </body>
+</html>
